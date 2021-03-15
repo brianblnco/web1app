@@ -34,3 +34,8 @@ body{
     font-size: 2rem;
     color: var(--negroClaro);
 }
+
+.navegacion-principal{
+    background-color: var(--gris);
+    padding: 1.3rem;
+}
