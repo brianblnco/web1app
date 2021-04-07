@@ -1,0 +1,143 @@
+:root {
+    --blanco : #ffffff;
+    --negro: #212121;
+    --negroClaro: #1D201F;
+    --gris: #757575;
+    --fuente: 'Cormorant Garamond', serif;
+    --fondoNav: #9f9d9b;
+    --grisClaro: #DFE9F3;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+
+    
+    font-size: 16px; /*1 rem = 16 px ( el rem se adapta mejor a televisores/pantallas grandes*/
+    font-family: var(--fuente);
+    background-image: linear-gradient(to top , var(--gris) 0%, var(--blanco) 40%); /*fondo degradado, hay que indicarle hacia donde va y desde que colores */
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+
+    font-size: 2.8rem;
+}
+
+h3{
+
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+/*#navIndex*/
+    
+
+
+.titulo span{
+    font-size: 2rem;
+    color: var(--negroClaro);
+}
+
+.contenedor {
+    max-width: 120 rem;
+    margin: 0 auto; /*top right botton left , en este aso 0 para 1 y 2 auto para 2,3 */
+    text-align: center;
+    
+}
+
+.boton{
+    background-color: rgb(102, 25, 25);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: .4rem; /*esquinas redondeadas */
+    width: 90%;
+}
+
+@media (min-width: 780px ) {
+    .boton{
+        width: auto;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+    
+
+
+.navegacion-principal{
+    background-color: var(--gris);
+    display: flex; /*nos permite propiedades de flex para distribuir elementos */
+    flex-direction: column;
+    
+}
+
+
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: BOLD;
+
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+    
+
+
+
+
+.navegacion-principal a:hover{
+
+    background-color: var(--negroClaro);
+}
+
+
+
+.fondoUbic {
+
+    background-image: url(../img/fondoUbic.jpg);
+    background-repeat: no-repeat; /*al minimzar la pantalla , ir hacuiendo mas pequeño la imagen se repite*/
+    background-size: cover; /*ocupe todo*/
+    height: 300px;
+    
+    position: relative;
+}
+
+.contenidofondoUbic{
+    position: absolute;
+    background-color: rgba(0 0 0 / 0%); /* para controlar la transparencia con el 4 valor, alpha*/
+
+    width: 100%;
+    height: 100%;
+
+    /**alinear vertical y horizontalmente **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
